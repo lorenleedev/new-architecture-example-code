@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
-import './index.css'
+import './external/assets/styles/index.css'
+import ExpenseListPage from "./external/view/pages/ExpenseListPage.tsx";
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <App />
+    <ExpenseListPage />
   </React.StrictMode>,
 )
