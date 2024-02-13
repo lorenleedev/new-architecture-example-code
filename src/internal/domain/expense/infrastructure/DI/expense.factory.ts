@@ -12,7 +12,7 @@ class ExpenseFactory {
 
   constructor(@inject(ApiService) apiService: ApiService) {
     this.apiService = apiService;
-    this.expenseOutAdapter = new ExpenseOutAdapter(apiService);
+    this.expenseOutAdapter = new ExpenseOutAdapter(this.apiService);
   }
 
   getExpenseListUsecase(params: GetExpenseUsecaseParams) {

@@ -86,7 +86,6 @@ class ApiService {
   get<T>({ url, data, config }: HttpMethodRequest) {
     const combinedConfig: AxiosRequestConfig = { ...baseConfig, ...config };
     // const params = data ? { params: data } : {}; TODO: params를 url에 넣어주는 로직이 필요함
-    console.log('data', data);
     return this.apiInstance.get<T>(url, combinedConfig);
   }
 }
