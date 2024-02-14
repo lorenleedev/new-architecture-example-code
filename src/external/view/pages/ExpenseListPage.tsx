@@ -1,5 +1,5 @@
 import {MouseEventHandler, useEffect, useState} from "react";
-import useUserStore from "../../utils/store/user.ts";
+import useUserStore from "../../thirdparty/store/user.ts";
 import expenseInAdapter from "../../../internal/domain/expense/infrastructure/adapter/in/expense.in.ts";
 
 const ExpenseListPage = () => {
@@ -14,8 +14,8 @@ const ExpenseListPage = () => {
 
     useEffect(() => {
         console.log('[0] 화면')
+        // 도메인과 관련된 모든 요청은 inAdapter를 통해서만 가능하다.
         expenseInAdapter.getExpenseList({id: userStore.user.id}).then((res) => {
-            console.log('res', res)
             setExpenses(res.data?.expenses)
         }).catch(e => {
             console.log('e', e)
@@ -23,8 +23,6 @@ const ExpenseListPage = () => {
             console.log('finally')
         });
     }, []);
-
-    // if(!expenses) return <div> is loading...</div>
 
     return (
         <div>

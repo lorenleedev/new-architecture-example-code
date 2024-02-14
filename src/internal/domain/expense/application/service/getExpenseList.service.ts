@@ -1,5 +1,5 @@
 import {UsecaseResponse} from "../../../../common/usecase.type.ts";
-import GetExpenseListUsecase from "../in/getExpenseList.usecase.ts";
+import GetExpenseListUsecase from "../usecase/getExpenseList.usecase.ts";
 import ExpenseOutAdapter from "../../infrastructure/adapter/out/expense.out.ts";
 import {GetExpenseUsecaseParams, GetExpenseUsecaseResponse} from "../../infrastructure/type/getExpenseList.type.ts";
 

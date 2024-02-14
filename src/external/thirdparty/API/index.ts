@@ -1,6 +1,6 @@
 import { injectable } from 'inversify';
 import 'reflect-metadata';
-import { baseConfig } from './config';
+import { baseConfig } from './config.ts';
 import axios, {AxiosInstance, AxiosRequestConfig} from "axios";
 // axios를 알고 있는 곳은 이 파일 뿐이어야함
 

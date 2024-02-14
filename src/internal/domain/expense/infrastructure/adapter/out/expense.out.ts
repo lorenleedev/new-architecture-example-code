@@ -3,7 +3,7 @@ import {
   GetExpenseAPIResponse, GetExpenseUsecaseParams, GetExpenseUsecaseResponse,
 } from "../../type/getExpenseList.type.ts";
 import { GET_EXPENSES_LIST } from "../../../../../../external/constants/api.ts";
-import ApiService from "../../../../../../external/utils/API";
+import ApiService from "../../../../../../external/thirdparty/API";
 
 // 역할: outgoing adapter는 외부 API와의 통신을 담당
 class ExpenseOutAdapter {

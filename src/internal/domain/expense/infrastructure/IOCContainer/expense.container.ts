@@ -1,6 +1,6 @@
 import { Container } from 'inversify';
 import ExpenseFactory from '../DI/expense.factory';
-import ApiService from "../../../../../external/utils/API";
+import ApiService from "../../../../../external/thirdparty/API";
 
 const container = new Container();
 

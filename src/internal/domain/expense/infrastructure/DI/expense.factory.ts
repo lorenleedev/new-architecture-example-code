@@ -1,4 +1,4 @@
-import ApiService from "../../../../../external/utils/API";
+import ApiService from "../../../../../external/thirdparty/API";
 import GetExpenseListService from "../../application/service/getExpenseList.service";
 import {GetExpenseUsecaseParams} from "../type/getExpenseList.type";
 import ExpenseOutAdapter from "../adapter/out/expense.out.ts";
